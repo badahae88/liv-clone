@@ -1,24 +1,23 @@
-# liv-clone
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# 내가 좋아하는 리브 자전거
+### 새로 알게 된 점
+- 쌍따옴표 안에는 작은 따옴표만 된다
+  ```javascript
+  <button @click="$emit('closeModal','')">닫기</button>
+  ```
+- 영역안에 세 요소를 왼쪽끝, 중앙, 오른쪽 끝으로 가로 정렬 하기
+  ```css
+  .1st-child{
+    margin-right: auto;
+  }
+  .3rd-child{
+    margin-left: auto;
+  }
+  ```
+- 인풋은 기본적으로 문자열이므로 숫자로 바꿔주려면 `v-model.number`이용
+  ```javascript
+  <input v-model.number="month" type="range" min="1" max="12">
+  ```
+### 느낀점
+- 정말.. 오래 걸린다.... 시간과 공간의 방이다..
+### 진행경과

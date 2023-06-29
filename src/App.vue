@@ -1,26 +1,54 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Modal
+    @closeModal="showModal=false"
+    :showModal='showModal'
+    :showItem='showItem'
+  />
+
+  <Menu
+    @closeBanner="openBanner=false"
+    :openBanner="openBanner"
+  />
+
+
+  <Card v-for="item in items" :key="item"
+    @click="showModal=true; showItem=item;"
+    :item="item"
+  />
+
+  <Footer/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import items from './items';
+import Menu from './components/Menu.vue'
+import Card from './components/Card.vue'
+import Modal from './components/Modal.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
+  data(){
+    return {
+      items: items,
+      openBanner: true,
+      showModal: false,
+      showItem: {},
+    }
+  },
   components: {
-    HelloWorld
+    Menu,
+    Card,
+    Modal,
+    Footer,
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.app{
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
+
+
 </style>
