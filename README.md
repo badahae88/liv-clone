@@ -1,6 +1,6 @@
 
 # 내가 좋아하는 리브 자전거
-### 새로 알게 된 점
+## 새로 알게 된 점
 - 쌍따옴표 안에는 작은 따옴표만 된다
   ```javascript
   <button @click="$emit('closeModal','')">닫기</button>
@@ -18,6 +18,9 @@
   ```javascript
   <input v-model.number="month" type="range" min="1" max="12">
   ```
-### 느낀점
+## 느낀점
 - 정말.. 오래 걸린다.... 시간과 공간의 방이다..
-### 진행경과
+## 진행경과
+### '23.06.29
+![0629-liv-clone](https://github.com/badahae88/liv-clone/assets/137893145/66012a60-010a-484a-8d81-b622a76b44a2)
+
