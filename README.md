@@ -22,6 +22,5 @@
 - 모달창이 모달 컴포넌트를 App.vue에서 메뉴컴포넌트보다 먼저 위치시켰는데도 메뉴에 가린다. 어떻게 해결해야 하지?
 ## 진행경과
 ### '23.06.29
-![0629-liv-clone](https://github.com/badahae88/liv-clone/assets/137893145/66012a60-010a-484a-8d81-b622a76b44a2)
-
 ![0629-liv-clone(2)](https://github.com/badahae88/liv-clone/assets/137893145/fbe27816-6267-4fe2-8848-3ff3b69a5e4c)
+![0629-liv-clone](https://github.com/badahae88/liv-clone/assets/137893145/66012a60-010a-484a-8d81-b622a76b44a2)
